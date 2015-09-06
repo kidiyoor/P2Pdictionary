@@ -13,3 +13,9 @@ Process 1:  Get key1
 Process 2:  Get key1  
 
 The system should behave in a consistent way; meaning answer to any such command should give same result across all processes.  Implement the above system, assuming the processes are perfect and do not fail.
+
+
+#TODO
+1. Handle unresponsive node; meaning if one node fails to update the dictionary, all other nodes should revert back the previous command(Implementation dependent)
+2. Auto chaining if a node crashes
+3. Remove redundancy of data.
