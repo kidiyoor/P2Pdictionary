@@ -153,7 +153,6 @@ def status():
 			url = "http://127.0.0.1:"+str(nextport)+"/status?id="+str(id1)+"&action="+action+"&key="+key+ "&value="+value
 			#url = "http://127.0.0.1:4000/status?id=4000&action=POST&key=key1&value=value1"
 			#req = urllib2.Request(url)
-			print("here")
 			#res = urllib2.urlopen(req).read()
 			httplib2.Http().request(url)
 	return "success"
