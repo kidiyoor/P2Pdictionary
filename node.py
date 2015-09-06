@@ -64,8 +64,6 @@ nextport = "next port, to be assigned"
 
 d = {}
 
-change = 0
-trip = 0
 
 @app.route('/display')
 def display():
@@ -109,7 +107,6 @@ def put():
 	if key in d.keys():
 		d[key] = value
 		out = "Key : <b>"+ key + "</b> updated with value : <b>"+ value + "</b>"
-		change = 1
 	else:
 		out = "Key not present"
 	return out
